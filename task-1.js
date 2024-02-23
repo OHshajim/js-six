@@ -48,6 +48,15 @@ const Names = Name.map(id => id.name)
  * take the age value and return the total
  */
 const people = [{ name: 'Rana', age: 20 }, { name: 'Mana', age: 29 }, { name:'Kana', age: 42 }, { name: 'Lona', age: 20 }]
-// 1st method
+
+// 1st method ---reduce()
 const AgeTotal = people.map(id=>id.age).reduce((p,c)=>p+c);
-console.log(AgeTotal);
+// console.log(AgeTotal);
+
+// 2nd method --- for
+let total = 0 ;
+for(let i = 0 ; i <people.length ; i++){
+        let age =  people[i].age;
+        total = total + age;
+};
+console.log(total);
