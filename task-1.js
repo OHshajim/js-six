@@ -38,6 +38,16 @@ const instructor = [
     { name: 'Akhi', age: 26, position: 'Junior' },
     { name: 'Shobuj', age: 28, position: 'Senior' }
 ];
-const Name = instructor.filter(id=> id.position==='Senior')
-const Names = Name.map(id=>id.name)
-console.log(Names);
+const Name = instructor.filter(id => id.position === 'Senior')
+const Names = Name.map(id => id.name)
+// console.log(Names); 
+
+
+
+/**task-4
+ * take the age value and return the total
+ */
+const people = [{ name: 'Rana', age: 20 }, { name: 'Mana', age: 29 }, { name:'Kana', age: 42 }, { name: 'Lona', age: 20 }]
+// 1st method
+const AgeTotal = people.map(id=>id.age).reduce((p,c)=>p+c);
+console.log(AgeTotal);
