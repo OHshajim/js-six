@@ -10,4 +10,4 @@ const large =(array1=[0] , array2=[0])=>{
     console.log(finalArray);
     return Math.max(...finalArray);
 };
-console.log(large([5,78,57,45],[4,-534,-0,45,53]));
+// console.log(large([5,78,57,45],[4,-534,-0,45,53]));
