@@ -50,7 +50,7 @@ const Names = Name.map(id => id.name)
 const people = [{ name: 'Rana', age: 20 }, { name: 'Mana', age: 29 }, { name: 'Kana', age: 42 }, { name: 'Lona', age: 20 }]
 
 // 1st method ---reduce()
-const AgeTotal = people.reduce((p, c) => p + c.age,0);
+const AgeTotal = people.reduce((p, c) => p + c.age, 0);
 // console.log(AgeTotal);
 
 // 2nd method --- for
@@ -86,6 +86,7 @@ let data = {
         ]
     }
 }
+// console.log(data.Sophia.study[1].secondary[1].location);
 
 // task-2: console .log  output: Petersburg, Herry
 
@@ -113,7 +114,7 @@ let students = {
         }
     }
 }
-
+// console.log(students["2222"].address["city"] ,",", students["3333"].name);
 
 // task-3 : access and then show habluder adda
 // show output Beginner
@@ -140,3 +141,5 @@ let data2 = {
             }
         ]
 }
+// console.log(data2.data[0].bookDetails.name);
+// console.log(data2.data[1].bookCategory);
