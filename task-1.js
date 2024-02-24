@@ -47,16 +47,96 @@ const Names = Name.map(id => id.name)
 /**task-4
  * take the age value and return the total
  */
-const people = [{ name: 'Rana', age: 20 }, { name: 'Mana', age: 29 }, { name:'Kana', age: 42 }, { name: 'Lona', age: 20 }]
+const people = [{ name: 'Rana', age: 20 }, { name: 'Mana', age: 29 }, { name: 'Kana', age: 42 }, { name: 'Lona', age: 20 }]
 
 // 1st method ---reduce()
-const AgeTotal = people.map(id=>id.age).reduce((p,c)=>p+c);
+const AgeTotal = people.map(id => id.age).reduce((p, c) => p + c);
 // console.log(AgeTotal);
 
 // 2nd method --- for
-let total = 0 ;
-for(let i = 0 ; i <people.length ; i++){
-        let age =  people[i].age;
-        total = total + age;
+let total = 0;
+for (let i = 0; i < people.length; i++) {
+    let age = people[i].age;
+    total = total + age;
 };
-console.log(total);
+// console.log(total);
+
+
+
+// new tasks
+// task -1: console log the secondary school location of Sophia 
+let data = {
+    Sophia: {
+        id: 33,
+        study: [
+            {
+                primary:
+                    [
+                        { school_name: "ABC primary school" },
+                        { location: "Peters burg" }
+                    ]
+            },
+            {
+                secondary:
+                    [
+                        { school_name: "ABC secondary school" },
+                        { location: "St Lorence" }
+                    ]
+            },
+        ]
+    }
+}
+
+// task-2: console .log  output: Petersburg, Herry
+
+let students = {
+    2222: {
+        name: "Jack",
+        section: "C",
+        class: "IX",
+        address: {
+            "building no": 12,
+            "street": "St. Jonson",
+            "city": "Petersburg",
+            "country": "UK"
+        }
+    },
+    3333: {
+        name: "Herry",
+        section: "D",
+        class: "X",
+        address: {
+            "building no": 85,
+            "street": "DC road",
+            "city": "Kachukhet",
+            "country": "Bangladesh"
+        }
+    }
+}
+
+
+// task-3 : access and then show habluder adda
+// show output Beginner
+let data2 = {
+    data:
+        [
+            {
+                bookId: 1,
+                bookDetails: {
+                    name: "habluder adda",
+                    category: "XYZ",
+                    price: "20$",
+                },
+                bookCategory: "Basic",
+            },
+            {
+                bookId: 2,
+                bookDetails: {
+                    name: "gobluder adda",
+                    category: "ABC",
+                    price: "40$",
+                },
+                bookCategory: "Beginner",
+            }
+        ]
+}
