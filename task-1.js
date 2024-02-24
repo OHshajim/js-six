@@ -50,7 +50,7 @@ const Names = Name.map(id => id.name)
 const people = [{ name: 'Rana', age: 20 }, { name: 'Mana', age: 29 }, { name: 'Kana', age: 42 }, { name: 'Lona', age: 20 }]
 
 // 1st method ---reduce()
-const AgeTotal = people.map(id => id.age).reduce((p, c) => p + c);
+const AgeTotal = people.reduce((p, c) => p + c.age,0);
 // console.log(AgeTotal);
 
 // 2nd method --- for
