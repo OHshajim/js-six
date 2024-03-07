@@ -41,10 +41,6 @@
          specification : {
             spoke : ['english','arabic','spanish'],
             designation : "developer" ,
-            watch : {
-                color : 'black ',
-                price : 3000 ,
-            }
          }
 
      };
