@@ -28,3 +28,29 @@
     // console.log(fstWife,secWife);
 
 
+// object destructuring
+     const employee ={
+         name : 'musud' ,
+         age : 20 ,
+         status : 'married',
+         wife : 'bristi' ,
+         skill : {
+            language : ['html','css','c++','java'],
+            
+         },
+         specification : {
+            spoke : ['english','arabic','spanish'],
+            designation : "developer" ,
+            watch : {
+                color : 'black ',
+                price : 3000 ,
+            }
+         }
+
+     };
+    //  basic
+    const {name , wife} = employee
+    // pacapaci
+    const {designation } = employee.specification
+    const {color ,price} = employee.specification.watch
+    console.log(color,price);
